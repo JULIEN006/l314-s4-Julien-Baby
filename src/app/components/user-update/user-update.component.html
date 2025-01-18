@@ -1,0 +1,28 @@
+<div class="update-user-form">
+  <h2>Update User</h2>
+  <form (ngSubmit)="updateUser()">
+    <div>
+      <label for="firstname">First Name</label>
+      <input
+        type="text"
+        id="firstname"
+        [(ngModel)]="user.firstname"
+        name="firstname"
+        required
+      />
+    </div>
+
+    <div>
+      <label for="lastname">Last Name</label>
+      <input
+        type="text"
+        id="lastname"
+        [(ngModel)]="user.lastname"
+        name="lastname"
+        required
+      />
+    </div>
+
+    <button type="submit">Update User</button>
+  </form>
+</div>

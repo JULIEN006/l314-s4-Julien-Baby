@@ -1,0 +1,85 @@
+.div-search-membre {
+    max-width: 600px;
+    margin: 50px auto; // Centrer horizontalement et ajouter un espace en haut
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  
+    h1 {
+      font-size: 24px;
+      color: #333;
+      margin-bottom: 20px;
+    }
+  
+    .search-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 20px;
+  
+      label {
+        display: none; // Masquer si non nécessaire
+      }
+  
+      input {
+        width: 60%;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        font-size: 16px;
+        transition: border-color 0.3s;
+  
+        &:focus {
+          border-color: #007bff;
+          outline: none;
+        }
+      }
+  
+      button {
+        padding: 10px 20px;
+        background-color: #ff5a5f;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+  
+        &:hover {
+          background-color: #d9534f;
+        }
+      }
+    }
+  
+    h2 {
+      font-size: 20px;
+      color: #444;
+      margin-bottom: 10px;
+    }
+  
+    p {
+      font-size: 16px;
+      color: #555;
+  
+      strong {
+        color: #333;
+      }
+    }
+  
+    .error {
+      margin-top: 20px;
+      padding: 10px;
+      background-color: #ffe6e6;
+      color: #ff5a5f;
+      border: 1px solid #f5c6cb;
+      border-radius: 5px;
+  
+      p {
+        margin: 0;
+        font-size: 16px;
+      }
+    }
+  }

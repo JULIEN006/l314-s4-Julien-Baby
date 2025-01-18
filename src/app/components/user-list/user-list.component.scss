@@ -1,0 +1,61 @@
+.list-container{
+    display: flex;
+    justify-content: center;
+
+}
+table {
+    width: 80%;
+    margin: 20px 0;
+    font-size: 16px;
+    text-align: left;
+    
+  
+    div {
+      display: grid;
+      grid-template-columns: 1fr 2fr 2fr; // Ajustez les colonnes selon vos besoins
+      align-items: center;
+      padding: 10px;
+      border-bottom: 1px solid #ddd;
+  
+      &:hover {
+        background-color: #f9f9f9; // Effet de survol
+      }
+  
+      span {
+        font-weight: bold;
+        color: #ff5a5f;
+      }
+  
+      .div-delete {
+        display: flex;
+        justify-content: flex-end;
+        gap: 10px;
+  
+        app-delete-user {
+          display: inline-block;
+        }
+  
+        a {
+          color: #ff5a5f;
+          text-decoration: none;
+          font-weight: bold;
+          transition: color 0.3s;
+            
+        }
+      }
+    }
+  }
+  
+  // Styles pour les en-têtes de colonnes
+  th {
+    background-color: #f4f4f4;
+    color: #333;
+    font-weight: bold;
+    padding: 10px;
+    border-bottom: 2px solid #ddd;
+  }
+  
+  // Ajouter un espacement entre chaque utilisateur (optionnel)
+  div:not(:last-child) {
+    margin-bottom: 10px;
+  }

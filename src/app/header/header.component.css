@@ -1,0 +1,60 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  height: 30px;
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+}
+
+header .logo img {
+  height: 30px;
+  margin-right: 10px;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+}
+
+header nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+}
+
+header .auth-buttons {
+  display: flex;
+  align-items: center;
+}
+
+header .auth-buttons a {
+  margin-left: 15px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+header .auth-buttons .sign-in {
+  color: #ff5a5f;
+}
+
+header .auth-buttons .sign-up {
+  background-color: #ff5a5f;
+  color: #fff;
+  padding: 8px 15px;
+  border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  header nav a {
+    display: none;
+  }
+}
